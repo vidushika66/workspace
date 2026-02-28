@@ -2,3 +2,4 @@ What is terraform backend?
 Ans: Terraform backend is used to store the state and it also provides an api for state locking.
 In AWS we need to use two services for state storage and state locking(aws s3 & aws dynamo db table)
 But in Azure we need to use only one service for both (Azure storage account)
+control +space
