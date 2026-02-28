@@ -1,1 +1,2 @@
-
+What is terraform backend?
+Ans: Terraform backend is used to store the state and it also provides an api for state locking.
