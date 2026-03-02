@@ -1,1 +1,21 @@
+Round1 : kubernetes & Networking Foundation
+Q1: What are different types of services in kubernetes?
+A: Service provide stable networking and pod discovery. even if the pod restarts or change ip ,service provide conistent endpoint. 
+There are three types of services:
+1) Clusterip- Expose the service inside the cluster only(for pod-to -pod communication)
+2) NodePort- Makes the service accessible outside the cluster using:<NodeIP>:<NodePort> (port range 30000–32767)
+3) LoadBalancer- creates the cloud load balancer and routes traffic to NodePorts->Pod.
+
+Q2: There is an EC2 instance in a public subnet; how will you migrate it to private subnet?
+A: option 1:
+1: Identify the ENI of your instance(EC2-Instances-Network Interface-Eni)
+2:Stop your EC2 instance
+3:Remove Public IP
+4:Go to EC2-Network interface->Eni->Actions->change subnet->select private subnet->save and close
+5: Start your EC2 instance
+with this approach we have downtime butfor critical applicationrunning in production and to have zero downtime we can go with another approach
+option 2:
+1: go to EC2 Instance->Instance->Action-> create AMI
+2: EC2 Instance->images->Ami->Select your Ami->create ec2 instance selecting your private subnet
+3: If needed terminate your older instance.
 
