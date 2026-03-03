@@ -19,3 +19,8 @@ option 2:
 2: EC2 Instance->images->Ami->Select your Ami->create ec2 instance selecting your private subnet
 3: If needed terminate your older instance.
 
+Q3:What is ingress in Kubernetes, and why do we need it?An 
+A: An I ngress is an API object that manages how external traffic should reach the services running inside the cluster.
+it defines the set of rules for external requests(most commonly http and https)to access cluster services.
+
+
