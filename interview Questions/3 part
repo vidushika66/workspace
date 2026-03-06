@@ -1,1 +1,7 @@
-
+1: Difference between git clone and git fork?
+A1: with the help of git clone we aew making the copy of our repositiory to our local wheras with Forking we are are make the copy of repository to userspace.
+Explaination: Workflow: with clone we ARE creating PR from featue to main under same userspace
+while in forking we have copy a repo from other userspace to our userspace but PR is crating fom our feature branch to the main branch of original repo that we have
+forked this prevents cretion of multiple of branch on original repo as it becomes difficult for devops engineer or administrator to handle the account and if ci-cd runs on
+multiple branches this will cost more to the organization.
+with fork you will become owner you can delete the bramch ,you can add ci-cd, you can add contributors
