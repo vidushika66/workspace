@@ -1,3 +1,5 @@
+version control system
+Git
 1: Difference between git clone and git fork?
 A1: with the help of git clone we aew making the copy of our repositiory to our local wheras with Forking we are are make the copy of repository to userspace.
 Explaination: Workflow: with clone we ARE creating PR from featue to main under same userspace
@@ -5,3 +7,8 @@ while in forking we have copy a repo from other userspace to our userspace but P
 forked this prevents cretion of multiple of branch on original repo as it becomes difficult for devops engineer or administrator to handle the account and if ci-cd runs on
 multiple branches this will cost more to the organization.
 with fork you will become owner you can delete the bramch ,you can add ci-cd, you can add contributors
+2: git pull: it is updating our local repository with all the changes from remote.
+3: git fetch: downloads new commits , branches,tags from remote repository but not updating our local repository.
+4: git reset and git revert which is bbest in practice?
+git reset and revert are used to rollback/undo  our commits/changes and in practice we use git revert because it creates the commit.
+
