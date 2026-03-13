@@ -2,6 +2,7 @@ Q1:Difference between demon set and stateful set with example use case?
 Ans: DS ensures that every node runs exact one instance of pod .it is used in case when workloads is node-scoped not an application-scoped
 ex monitoring system(prometheus,DataDog) whereas stateful set is used for stateful Application that require stable pod identity ,persitent
 volumes ,ordered deployments/updates
+ex Databases(mongo,mysql),Distributed system
 Q2: What are sidear containers?
 Ans: These are helping containers that run alongside every containers inside pod , (usually there is one to one mapping suggested btw pod 
 and container but in some cases these sidecars containers run along with application inside pod).
@@ -12,8 +13,6 @@ Blue-current running environment
 Green-Idle environment
 We are switching the traffic to green environment if rollback requires by changing matchlabels in service definitons.
 It is costly as we require more resources to run identical two environments
-
-ex Databases(mongo,mysql),Distributed system
 Q2:How to connect a specific container from a web browser (network)?
 Ans: 
 Q3:How to secure connection between pods?
