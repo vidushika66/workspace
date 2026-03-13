@@ -6,3 +6,21 @@ Ans:
 Q3:How to secure connection between pods?
 Q4:What is pod evicted? and how to troubleshoot
 Q5:What deployment strategy used? and how to achieve zero down time?
+Q6: What is Blue/green deployment?
+A6: This is rollback strategy .
+We created two environment in both the environment application is running. but user is accessing only one environment.
+Blue-current running environment
+Green-Idle environment
+We are switching the traffic to green environment if rollback requires by changing matchlabels in service definitons.
+It is costly as we require more resources to run identical two environments
+Q: What are taints and tolerations?
+Taints and tolerations work together XW 
+
+
+
+
+
+
+
+
+
