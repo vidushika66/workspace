@@ -1,0 +1,38 @@
+Q: Why is my AWS bill high even after deleting AMIs?
+A: Because snapshot created during AMI creation are still stored and charged seperately.
+
+Note: If you mount a volume manually and restart the instance, the mount disappears unless we add entry in /etc/fstab
+Scenario: You have an EC2 instance with a root or data volume . You increase the EBS volume size in AWS 
+Original 20 GB
+Increased: 40 GB
+Now if we check inside linux
+df -h you still see 20 GB not 40 GB why this happens?
+AWS EBS volume is just a block device . Incresing the size updates virtual disk in AWS but Linux does not automatically resize filesystem on 
+disk. the filesystem must be extended manually. 
+first: verify new disk size lsblk -f
+second: use linux command to extend filesystem on disk
+if filesystem is ext4
+then use command 
+sudo resize2fs /dev/xvda1
+
+if filesystem is xfs then use
+sudo xfs_growfs /dev/xvda1
+
+verify df -h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
