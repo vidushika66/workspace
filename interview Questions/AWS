@@ -19,7 +19,16 @@ option 2:
 2: EC2 Instance->images->Ami->Select your Ami->create ec2 instance selecting your private subnet
 3: If needed terminate your older instance.
 
-Q3:What is ingress in Kubernetes, and why do we need it?An 
+Q3: You have created an ec2 instance and attach an volume to it that is unencrypted, you need to encrypt that volume without stopping
+    the instance.How would you do?
+A: step1: will create a snapshot of attached volume
+   step2: will create a volume using that snapshot and encrypt it.
+   step3: Go to the EC2 instance and attached new volume
+   step3: create a directry ex /data/app
+   step4: Run lsblk -f it will show all the available volume
+   step5: mount the volume using sudo mount /dev/ext1 /dta/app
+
+Q4:What is ingress in Kubernetes, and why do we need it?
 A: An I ngress is an API object that manages how external traffic should reach the services running inside the cluster.
 it defines the set of rules for external requests(most commonly http and https)to access cluster services.
 
