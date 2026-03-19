@@ -12,3 +12,5 @@ steps to use bg/fg
 1: ctrl+z: this stops the current process
 2: jobs: with jobs we are able to see stop process
 3: bg: this will put the process at bg to run
+
+vpc->subnet->Action->Enabling auto assigning public ip (EC2 instance created in this subnet will have public ip)
