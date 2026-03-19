@@ -1,0 +1,14 @@
+For system montoring/ process monitoring
+1: top
+2: ps
+Process management command:
+1: bg- to make the process run in background in case we need to run another process
+2: fg- to move the process back from bg to foground
+3: nhopup- when we close the terminal , running process on that terminal also stoped but using nhopup that process still runs if we check again 
+ from new terminal.
+4: nice- with the help of nice command we are able to set priority of the process (priority is from -19 to -20 and lowest hve highest priority )
+
+steps to use bg/fg
+1: ctrl+z: this stops the current process
+2: jobs: with jobs we are able to see stop process
+3: bg: this will put the process at bg to run
