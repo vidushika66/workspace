@@ -25,4 +25,16 @@ or in diff account
 Networking in AWS
 1: VPC Peering
 Refer image VPC Peering
+2: vpc endpoints
+There are two types of vpc endpoint
+a: gateway endpoint- 
+:it is for accessing s3 ,dynamodb
+: it is free of cost, there will be no cost in reading or writing data
+b: Inter face endpint- 
+: for aws saas ex sqs , kinesis, elb,
+: it incurs some cost but less than NAT Gateway
+With the help of vpc endpoint we are able to access aws service privately ,traffic is not going over internet
+commands:
+aws s3 cp s3://nameofbucket  /data/image
+aws sqs send-message --queue-message "i am good" url of queue
 
