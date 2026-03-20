@@ -22,3 +22,7 @@ with the help of vpc peering what we can do
 if we need ec2 in vpc1 to communicate with ec2 in vpc2 through private ip address
 ex-  projects needs some data from diff app (project 2) in AWS IN THIS CASE BOTH PROJECT WILL BE IN DIFF VPC NOW THOSE VPC CAN BE in diff region,
 or in diff account
+Networking in AWS
+1: VPC Peering
+
+
