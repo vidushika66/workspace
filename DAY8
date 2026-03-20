@@ -36,5 +36,5 @@ b: Inter face endpint-
 With the help of vpc endpoint we are able to access aws service privately ,traffic is not going over internet
 commands:
 aws s3 cp s3://nameofbucket  /data/image
-aws sqs send-message --queue-message "i am good" url of queue
+aws sqs send-message "i am good" --queue-url https://sqs.ap-south
 
