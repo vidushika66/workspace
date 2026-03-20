@@ -14,7 +14,7 @@ steps to use bg/fg
 3: bg: this will put the process at bg to run
 
 Networking in AWS
-1: VPC Peering
+1: Peering connection
 Refer image VPC Peering
 vpc->subnet->Action->Enabling auto assigning public ip (EC2 instance created in this subnet will have public ip)
 while creating vpc peering connection
