@@ -5,5 +5,5 @@ spec:
           name: app
   ports
     port:
-    targetPort:
+    
  clusterip: none #  This option helps us to use pod ip for service
