@@ -1,1 +1,9 @@
-
+While creatiing service under spec there is one more option we can add
+spec:
+  selectors
+     matchlabels
+          name: app
+  ports
+    port:
+    targetPort:
+ clusterip: none #  This option helps us to use pod ip for service
