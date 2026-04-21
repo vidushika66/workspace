@@ -1,0 +1,11 @@
+Advantages of docker caching-only changes layer are rebuilt
+  we are using multistage docker build to
+  1: Reduce size of image
+  2: Adding extra layer of security
+  3: Making deployment  faster
+  4: Adding non-root user for security so that
+     1: Restricted paths are not accessible
+     2: Not able to modify files
+
+  5: leveraged docker-cache to reduce dockr build.
+    
