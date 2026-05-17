@@ -1,1 +1,2 @@
-
+helm list --deployed: shows the current version of chart
+helm list --superseaded: shows the previous version of the chart
